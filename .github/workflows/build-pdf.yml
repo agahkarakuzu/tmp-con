@@ -24,8 +24,6 @@ jobs:
          path: tmp-web
      - name: Compile PDF
        run: |
-        ls
-        ls tmp-web
         rm -rf /tmp-web/.git
         cp -a tmp-web/. .
         rm -rf tmp-web 
@@ -68,32 +66,37 @@ jobs:
    if: "!contains(github.event.head_commit.message, 'Initial commit')"
    needs: buildPDF
    steps:  
-     - name: Checkout repository
+     - name: Checkout repository 1
        uses: actions/checkout@v2
        with:
         submodules: true
         fetch-depth: 0
-        repository: agahkarakuzu/tmp-web
+     - name: Checkout repository 2
+       uses: actions/checkout@v2
+       with:
+         token: ${{ secrets.PAT_BOT }}
+         repository: agahkarakuzu/tmp-web
+         path: tmp-web
      - name: Checkout web-page content
        run: |
         rm -rf /tmp-web/.git
-        rsync -a --remove-source-files /tmp-web 
-        rm -rf /tmp-web
+        cp -a tmp-web/. .
+        rm -rf tmp-web 
         mkdir -p static/pdf
         mkdir -p data 
-     - uses: actions/download-artifact@main
+     - uses: actions/download-artifact@master
        with:
          name: PDF Report ${{env.PUB_NAME}}
          path: static/pdf
-     - uses: actions/download-artifact@main
+     - uses: actions/download-artifact@master
        with:
          name: HTML Report ${{env.PUB_NAME}}
          path: layouts/partials
-     - uses: actions/download-artifact@main
+     - uses: actions/download-artifact@master
        with:
          name: JSON Report ${{env.PUB_NAME}}
          path: data
-     - uses: actions/download-artifact@main
+     - uses: actions/download-artifact@master
        with:
          name: JSON GitHub ${{env.PUB_NAME}}
          path: data
@@ -106,7 +109,7 @@ jobs:
         git commit -m "[ADD] 🤖 Compiled PDF" -a
         ls ./static/pdf
      - name: Push changes
-       uses: ad-m/github-push-action@main
+       uses: ad-m/github-push-action@master
        with:
         github_token: ${{ secrets.PAT_BOT }}   
      - name: Setup Hugo
