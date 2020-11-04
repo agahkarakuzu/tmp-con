@@ -14,13 +14,14 @@ jobs:
       image: agahkarakuzu/bhproceedings@sha256:bfc1b7f3b714b12e04a6a6ef1f440e9f19997ac1bfecc2187f2476cf47c22ab3
 
     steps:
-     - name: Checkout repository
+     - name: Checkout repository 1
        uses: actions/checkout@v2
-     - name: Checkout repository
+     - name: Checkout repository 2
        uses: actions/checkout@v2
        with:
          token: ${{ secrets.PAT_BOT }}
          repository: agahkarakuzu/tmp-web
+         path: try
      - name: Compile PDF
        run: |
         ls
