@@ -16,9 +16,10 @@ jobs:
     steps:
      - name: Checkout repository
        uses: actions/checkout@v2
+       with:
+         repository: agahkarakuzu/tmp-web
      - name: Compile PDF
        run: |
-        git clone https://github.com/agahkarakuzu/tmp-web.git --depth 1
         rm -rf /tmp-web/.git
         rsync -a --remove-source-files /tmp-web
         rm -rf /tmp-web 
@@ -66,9 +67,9 @@ jobs:
        with:
         submodules: true
         fetch-depth: 0
+        repository: agahkarakuzu/tmp-web
      - name: Checkout web-page content
        run: |
-        git clone https://github.com/agahkarakuzu/tmp-web.git --depth 1
         rm -rf /tmp-web/.git
         rsync -a --remove-source-files /tmp-web 
         rm -rf /tmp-web
