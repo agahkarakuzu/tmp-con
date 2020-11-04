@@ -103,6 +103,5 @@ Figure files must be placed at the \code{figures} folder. You can include figure
 
 \end{figure}
 
-![image](brainhack.png "something" {width=400px height=400px})
 
 To refer a figure in the text, you need to use the respective label defined in its caption: Fig. \ref{fig1}
