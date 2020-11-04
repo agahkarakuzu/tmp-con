@@ -108,6 +108,7 @@ jobs:
         git add static/pdf/brainhack-${{env.PUB_NAME}}.pdf
         git commit -m "[ADD] 🤖 Compiled PDF" -a
         ls ./static/pdf
+        git pull
      - name: Push changes
        uses: ad-m/github-push-action@master
        with:
