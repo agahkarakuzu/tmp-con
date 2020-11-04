@@ -17,9 +17,11 @@ jobs:
      - name: Checkout repository
        uses: actions/checkout@v2
        with:
+         token: ${{ secrets.PAT_BOT }}
          repository: agahkarakuzu/tmp-web
      - name: Compile PDF
        run: |
+        ls
         rm -rf /tmp-web/.git
         rsync -a --remove-source-files /tmp-web
         rm -rf /tmp-web 
