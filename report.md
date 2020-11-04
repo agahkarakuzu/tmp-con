@@ -1,7 +1,7 @@
 ---
 event: 'OHBM Brainhack 2020'
 
-title:  'Title goes here'
+title:  'No way this worked'
 
 author:
 - initials: JD
