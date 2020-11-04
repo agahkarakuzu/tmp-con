@@ -21,13 +21,14 @@ jobs:
        with:
          token: ${{ secrets.PAT_BOT }}
          repository: agahkarakuzu/tmp-web
-         path: try
+         path: tmp-web
      - name: Compile PDF
        run: |
         ls
+        ls tmp-web
         rm -rf /tmp-web/.git
-        rsync -a --remove-source-files /tmp-web
-        rm -rf /tmp-web 
+        cp -a tmp-web/. .
+        rm -rf tmp-web 
         mkdir -p data
         [ -e data/report.json ] && rm data/report.json
         [ -e data/ghdetails.json ] && rm data/ghdetails.json
