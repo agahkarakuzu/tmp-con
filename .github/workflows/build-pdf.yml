@@ -16,6 +16,8 @@ jobs:
     steps:
      - name: Checkout repository
        uses: actions/checkout@v2
+     - name: Checkout repository
+       uses: actions/checkout@v2
        with:
          token: ${{ secrets.PAT_BOT }}
          repository: agahkarakuzu/tmp-web
