@@ -1,3 +1,5 @@
 #fig1 {
-        width: 20%;
+        border: dashed;
+        max-width: 20%;
+        
         }
