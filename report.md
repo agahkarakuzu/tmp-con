@@ -97,7 +97,7 @@ Figure files must be placed at the \code{figures} folder. You can include figure
 
 \begin{figure}[h!]
 
-  \includegraphics[width=.47\textwidth,natwidth=200,natheight=200]{brainhack.png}
+  \includegraphics[width=.47\textwidth]{brainhack}
 
   \caption{\label{fig1} Your caption goes here.}
 
