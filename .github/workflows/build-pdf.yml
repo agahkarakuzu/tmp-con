@@ -78,7 +78,9 @@ jobs:
          path: tmp-web
      - name: Checkout web-page content
        run: |
-        rm -rf /tmp-web/.git
+        ls
+        ls tmp-web 
+        rm -rf tmp-web/.git
         cp -a tmp-web/. .
         rm -rf tmp-web 
         mkdir -p static/pdf
