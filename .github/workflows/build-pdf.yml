@@ -111,6 +111,7 @@ jobs:
      - name: Push changes
        uses: ad-m/github-push-action@master
        with:
+        branch: main
         github_token: ${{ secrets.PAT_BOT }}   
      - name: Setup Hugo
        uses: peaceiris/actions-hugo@v2
