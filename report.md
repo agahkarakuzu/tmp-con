@@ -3,11 +3,11 @@ event: 'OHBM Brainhack 2020'
 
 title:  'No way this worked 5'
 
-url: GitHub actions will populate this field. Do not edit unless building PDF & web-page locally.
+url: https://github.com/agahkarakuzu/tmp-con
 
-last_changed: GitHub actions will populate this field. Do not edit unless building PDF & web-page locally. 
+last_changed: https://github.com/2020-11-05 05:10
 
-auth_created: GitHub actions will populate this field. Do not edit unless building PDF & web-page locally. 
+auth_created: agahkarakuzu
 
 author:
 - initials: JD
