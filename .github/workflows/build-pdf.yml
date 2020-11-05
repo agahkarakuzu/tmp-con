@@ -115,7 +115,7 @@ jobs:
         mkdir -p static/img
         mkdir -p data 
         cp figures/figures.css static/css/figures.css
-        cp figures/. static/.
+        cp -a figures/. static/
         rm static/figures.css
      - uses: actions/download-artifact@master
        with:
