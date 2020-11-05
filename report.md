@@ -5,7 +5,7 @@ title:  'No way this worked 5'
 
 url: https://github.com/agahkarakuzu/tmp-con
 
-last_changed: 2020-11-05 05:44 UTC
+last_changed: https://github.com/2020-11-05 05:10
 
 auth_created: agahkarakuzu
 
@@ -107,6 +107,6 @@ Figure files must be placed at the \code{figures} folder. You can include figure
 
 \end{figure}
 
-Note that \code{[width=.47\textwidth]} above sets scales the figure size in the PDF. To change attributes of the figures on the webpage, please see \code{[/figures/figures.css]}. 
+Note that \code{width=.47\textwidth} above sets scales the figure size in the PDF. To change attributes of the figures on the webpage, please see \code{/figures/figures.css}. 
 
 To refer a figure in the text, you need to use the respective label defined in its caption: Fig. \ref{Figure-1}
