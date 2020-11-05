@@ -103,9 +103,10 @@ Figure files must be placed at the \code{figures} folder. You can include figure
 
   \includegraphics[width=.47\textwidth]{brainhack.png}
 
-  \caption{\label{fig1} Your caption goes here.}
+  \caption{\label{Figure-1} Your caption goes here.}
 
 \end{figure}
 
+Note that \code{[width=.47\textwidth]} above sets scales the figure size in the PDF. To change attributes of the figures on the webpage, please see \code{[/figures/figures.css]}. 
 
-To refer a figure in the text, you need to use the respective label defined in its caption: Fig. \ref{fig1}
+To refer a figure in the text, you need to use the respective label defined in its caption: Fig. \ref{Figure-1}
