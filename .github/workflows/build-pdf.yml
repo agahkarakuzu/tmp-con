@@ -3,25 +3,50 @@ on:
   push:
     branches:
       - main 
-
 env:
  PUB_NAME: ${{ github.event.repository.name }}
 jobs:
+  updateInfo:
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, 'Initial commit')"    
+    steps:
+      - name: Checkout this (user) repository
+        uses: actions/checkout@v2
+      - name: Get current date
+        run: echo "::set-env name=DATE::$(date +'%Y-%m-%d %H:%M')"
+      - name: Update MD front-matter
+        run: |
+         sed -i "/^url:.*/c\url: https://github.com/$GITHUB_REPOSITORY" report.md
+         sed -i "/^last_changed:.*/c\last_changed: https://github.com/$DATE" report.md
+         sed -i "/^auth_created:.*/c\auth_created: ${{ github.actor }}" report.md
+         git config --local user.email "noreply@bhproceedings.com"
+         git config --local user.name "BHBOT"
+         git add report.md
+         git commit -m "[UPDATE] 🤖 MD metadata" -a
+      - name: Push metadata
+        uses: ad-m/github-push-action@master
+        with:
+         branch: main
+         force: true
+         github_token: ${{ secrets.PAT_BOT }}
+  
   buildPDF:
     runs-on: ubuntu-latest
+    needs: updateInfo
     if: "!contains(github.event.head_commit.message, 'Initial commit')"
     container:
       image: agahkarakuzu/bhproceedings@sha256:bfc1b7f3b714b12e04a6a6ef1f440e9f19997ac1bfecc2187f2476cf47c22ab3
 
     steps:
-     - name: Checkout repository 1
+     - name: Checkout this (user) repository
        uses: actions/checkout@v2
-     - name: Checkout repository 2
+     - name: Checkout web-source repository
        uses: actions/checkout@v2
        with:
          token: ${{ secrets.PAT_BOT }}
          repository: agahkarakuzu/tmp-web
          path: tmp-web
+         submodules: true
      - name: Compile PDF
        run: |
         rm -rf /tmp-web/.git
@@ -70,16 +95,15 @@ jobs:
    if: "!contains(github.event.head_commit.message, 'Initial commit')"
    needs: buildPDF
    steps:  
-     - name: Checkout repository 1
+     - name: Checkout this (user) repository
        uses: actions/checkout@v2
-       with:
-        submodules: true
-     - name: Checkout repository 2
+     - name: Checkout web-source repository
        uses: actions/checkout@v2
        with:
          token: ${{ secrets.PAT_BOT }}
          repository: agahkarakuzu/tmp-web
          path: tmp-web
+         submodules: true
      - name: Checkout web-page content
        run: |
         ls
@@ -114,7 +138,6 @@ jobs:
         git config --local user.name "BHBOT"
         git add static/pdf/brainhack-${{env.PUB_NAME}}.pdf
         git commit -m "[ADD] 🤖 Compiled PDF" -a
-        git status
      - name: Push changes
        uses: ad-m/github-push-action@master
        with:
