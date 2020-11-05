@@ -90,7 +90,7 @@ jobs:
         mkdir -p static/pdf
         mkdir -p static/css
         mkdir -p data 
-        mv fig.css static/css/fig.css 
+        cp fig.css static/css/fig.css 
      - uses: actions/download-artifact@master
        with:
          name: PDF Report ${{env.PUB_NAME}}
