@@ -41,7 +41,7 @@ jobs:
         bibtex brainhack-${{env.PUB_NAME}}
         pdflatex brainhack-${{env.PUB_NAME}}.tex
         pdflatex brainhack-${{env.PUB_NAME}}.tex
-        pandoc brainhack-${{env.PUB_NAME}}-html.tex -c ../fig.css -f latex -t html -s -o report.html --bibliography ../report.bib
+        pandoc brainhack-${{env.PUB_NAME}}-html.tex -c fig.css -f latex -t html -s -o report.html --bibliography ../report.bib
         cp report.html ../layouts/partials/report.html
         mkdir -p ../static/pdf
         cp brainhack-${{env.PUB_NAME}}.pdf ../static/pdf/brainhack-${{env.PUB_NAME}}.pdf
@@ -88,7 +88,9 @@ jobs:
         cp -a tmp-web/. .
         rm -rf tmp-web 
         mkdir -p static/pdf
+        mkdir -p static/css
         mkdir -p data 
+        mv fig.css static/css/fig.css 
      - uses: actions/download-artifact@master
        with:
          name: PDF Report ${{env.PUB_NAME}}
