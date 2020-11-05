@@ -75,7 +75,7 @@ You can cite entries in your bibliography using their tags:
 
 Remember that this is a LaTex flavored markdown. Therefore, some characters must be used with an escape character within the text:
 
-\code{\& \% \$ \# \_ \{  \} $\backslash$}
+\code{\& \% \$ \# \_ \{  \} \textbackslash}
 
 
 # Section
@@ -112,6 +112,6 @@ Figure files must be placed at the \code{figures} folder. You can include figure
 
 \end{figure}
 
-Note that \code{width=.47$\backslash$textwidth} above sets scales the figure size in the PDF. To change attributes of the figures on the webpage, please see \code{/figures/figures.css}. 
+Note that \code{width=.47 \textbackslash textwidth} above sets scales the figure size in the PDF. To change attributes of the figures on the webpage, please see \code{/figures/figures.css}. 
 
 To refer a figure in the text, you need to use the respective label defined in its caption: Fig. \ref{Figure-1}
