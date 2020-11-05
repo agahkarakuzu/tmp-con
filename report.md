@@ -73,6 +73,11 @@ You can cite entries in your bibliography using their tags:
 \smallskip
 \noindent You can use \code{inline code highlight}. This paragraph shows how to add blank lines and how to start a paragraph without indentation.
 
+Remember that this is a LaTex flavored markdown. Therefore, some characters must be used with an escape character within the text:
+
+\code{\& \% \$ \# \_ \{  \} $\backslash$}
+
+
 # Section
 You can create additional sections as you prefer. Section title levels are determined by the number of hastags as in a traditional markdown file.
 
@@ -107,6 +112,6 @@ Figure files must be placed at the \code{figures} folder. You can include figure
 
 \end{figure}
 
-Note that \code{width=.47\}textwidth} above sets scales the figure size in the PDF. To change attributes of the figures on the webpage, please see \code{/figures/figures.css}. 
+Note that \code{width=.47$\backslash$textwidth} above sets scales the figure size in the PDF. To change attributes of the figures on the webpage, please see \code{/figures/figures.css}. 
 
 To refer a figure in the text, you need to use the respective label defined in its caption: Fig. \ref{Figure-1}
