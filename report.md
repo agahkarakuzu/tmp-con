@@ -107,6 +107,5 @@ Figure files must be placed at the \code{figures} folder. You can include figure
 
 \end{figure}
 
-Note that \code{width=.47\textwidth} above sets scales the figure size in the PDF. To change attributes of the figures on the webpage, please see \code{/figures/figures.css}. 
 
 To refer a figure in the text, you need to use the respective label defined in its caption: Fig. \ref{Figure-1}
