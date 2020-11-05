@@ -17,7 +17,7 @@ jobs:
       - name: Update MD front-matter
         run: |
          sed -i "/^url:.*/c\url: https://github.com/$GITHUB_REPOSITORY" report.md
-         sed -i "/^last_changed:.*/c\last_changed: https://github.com/$DATE" report.md
+         sed -i "/^last_changed:.*/c\last_changed: $DATE UTC" report.md
          sed -i "/^auth_created:.*/c\auth_created: ${{ github.actor }}" report.md
          git config --local user.email "noreply@bhproceedings.com"
          git config --local user.name "BHBOT"
@@ -46,7 +46,6 @@ jobs:
          token: ${{ secrets.PAT_BOT }}
          repository: agahkarakuzu/tmp-web
          path: tmp-web
-         submodules: true
      - name: Compile PDF
        run: |
         rm -rf /tmp-web/.git
