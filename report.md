@@ -1,7 +1,13 @@
 ---
 event: 'OHBM Brainhack 2020'
 
-title:  'No way this worked 4'
+title:  'No way this worked 5'
+
+url: GitHub actions will populate this field. Do not edit unless building PDF & web-page locally.
+
+last_changed: GitHub actions will populate this field. Do not edit unless building PDF & web-page locally. 
+
+auth_created: GitHub actions will populate this field. Do not edit unless building PDF & web-page locally. 
 
 author:
 - initials: JD
@@ -36,8 +42,6 @@ affiliations:
   country: Canada
 
 summary: Please write a brief summary of your project. This section will appear on the webpage. 
-
-url: http://github.com/repo_owner/repo_name
 
 coi: Please add if there are competing interests. Otherwise, type None.
 
