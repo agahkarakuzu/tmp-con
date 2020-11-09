@@ -3,11 +3,13 @@ event: 'OHBM Brainhack 2020'
 
 title:  'No way this worked 5'
 
+# Automatically edited by GitHub actions, please do not modify -- START --
 url: https://github.com/agahkarakuzu/tmp-con
 
 last_changed: 2020-11-09 21:02 UTC
 
 auth_created: agahkarakuzu
+# Automatically edited by GitHub actions, please do not modify -- END -- 
 
 author:
 - initials: JD
@@ -59,6 +61,11 @@ supplemental:
   - Material 2 
 
 bibliography: report
+
+reviewer:
+  - name: agah
+    surname: karakuzu 
+    github_handle: agahkarakuzu
 ---
 
 # Introduction

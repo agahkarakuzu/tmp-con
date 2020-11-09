@@ -28,7 +28,7 @@ jobs:
         with:
          branch: main
          force: true
-         github_token: ${{ secrets.PAT_BOT }}
+         github_token: ${{ secrets.PAT_BHP }}
   
   buildPDF:
     runs-on: ubuntu-latest
@@ -43,7 +43,7 @@ jobs:
      - name: Checkout web-source repository
        uses: actions/checkout@v2
        with:
-         token: ${{ secrets.PAT_BOT }}
+         token: ${{ secrets.PAT_BHP }}
          repository: agahkarakuzu/tmp-web
          path: tmp-web
      - name: Compile PDF
@@ -99,7 +99,7 @@ jobs:
      - name: Checkout web-source repository
        uses: actions/checkout@v2
        with:
-         token: ${{ secrets.PAT_BOT }}
+         token: ${{ secrets.PAT_BHP }}
          repository: agahkarakuzu/tmp-web
          path: tmp-web
          submodules: true
@@ -145,7 +145,7 @@ jobs:
        with:
         branch: main
         force: true
-        github_token: ${{ secrets.PAT_BOT }}   
+        github_token: ${{ secrets.PAT_BHP }}   
      - name: Setup Hugo
        uses: peaceiris/actions-hugo@v2
        with:
@@ -157,5 +157,5 @@ jobs:
      - name: Deploy
        uses: peaceiris/actions-gh-pages@v3
        with:
-         github_token: ${{ secrets.PAT_BOT }}
+         github_token: ${{ secrets.PAT_BHP }}
          publish_dir: ./public
