@@ -62,7 +62,10 @@ supplemental:
 
 bibliography: report
 
-reviewers: agahkarakuzu
+reviewers:
+  - name: Agah
+    surname: Karakuzu
+    gh_handle: agahkarakuzu
 ---
 
 # Introduction
