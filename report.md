@@ -63,9 +63,8 @@ supplemental:
 bibliography: report
 
 reviewer:
-  - name: agah
-    surname: karakuzu 
-    github_handle: agahkarakuzu
+  - agahkarakuzu
+  - theo
 ---
 
 # Introduction
