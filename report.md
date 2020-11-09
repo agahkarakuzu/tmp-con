@@ -62,10 +62,7 @@ supplemental:
 
 bibliography: report
 
-reviewers:
-  - agahkarakuzu
-  - theo
-  - another
+reviewers: agahkarakuzu
 ---
 
 # Introduction
