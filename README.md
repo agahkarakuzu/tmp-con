@@ -1,15 +1,9 @@
-<h2 align="center"> STEP 1 - Get the machinery running ⚙️ </h2>
+<h2 align="center"> STEP 1 - Quick start ⚙️ </h2>
 
-<h3 align="center"> Fork this repository </h3>
+<h3 align="center"> Use this template </h3>
+<h3 align="center"> 🍪✂️ </h3>
 
-<p align="center"><img src="https://github.com/channelCS/github-buttons/blob/master/2x/github_fork.png"></p>
-
-
-<h3 align="center"> Enable actions </h3>
-<h3 align="center"> ✅</h3>
-
-<p align="center">Go to the <code>Actions</code> tab in your forked repo, and click the green button that says "I understand my actions, go ahead and enable them".</p>
-
+<p align="center">Click the green <code>Use this template</code> button and create a repository in your own user account. <br><br> Please follow <b>YYYY_MM_first-auth-surname_freeform-keywords</b> convention to name your repository. <br><br> For example: <code>2020_10_karakuzu_qmri-pulse-sequence</code></p>
 
 <h3 align="center">  Create a GitHub access token </h3>
 <h3 align="center"> 🔑 </h3>
@@ -23,7 +17,7 @@
 
 <p align="center"> Simply follow <a href="https://docs.github.com/en/free-pro-team@latest/actions/reference/encrypted-secrets#creating-encrypted-secrets-for-a-repository">these steps</a>.</p>
 
-<p align="center">  The name of the secret must be <code>PAT_BOT</code> and the value must be the key you obtained from the previous step. </p>
+<p align="center">  The name of the secret must be <code>PAT_BHP</code> and the value must be the key you obtained from the previous step. </p>
 
 
 <h3 align="center"> Push a dummy change to the <code>master</code> </h3>
@@ -31,13 +25,12 @@
 
 <p align="center"> It can be anything, such as simply editing this <code>README.md</code> file you are reading at the moment. </p>
 
-
 <h3 align="center"> What now ?  </h3>
 <h3 align="center"> 👀 </h3>
 
-<p align="center">After pushing your changes to the <code>master</code> branch, visit the <b>Actions</b> tab of your repository. You should see an action named <b>Build proceeding PDF</b>, which consists of two steps <code>buildPDF</code> and <code>buildHugo</code>.</p>  
+<p align="center">After pushing your changes to the <code>master</code> branch, visit the <b>Actions</b> tab of your repository. You should see an action named <b>Build proceeding PDF</b>, which consists of three jobs <code>updateInfo</code> , <code>buildPDF</code> and <code>buildHugo</code>.</p>  
 
-<p align="center">Soon after a successful action run, your web page will be deployed. You should see <b>Environments</b> section appeared in your repository (on the right column). In the <b>Environments</b> page, click the <code>View Deployment</code> button to visit your report page! At this stage, it should be identical to the <a href="http://brainhack-proceedings.github.io/template">BrainHack proceedings template webpage</a>.</p>
+<p align="center">Soon after a successful action run, your web page will be deployed. You should see <b>Environments</b> section appeared in your repository (on the right column). In the <b>Environments</b> page, click the <code>View Deployment</code> button to visit your report page! At this stage, it should be identical to the <a href="http://brainhack-proceedings.github.io/template">BrainHack proceedings template webpage</a>. Click <code>Download PDF</code> button. The PDF should display the link to your repository (<b>Project URL</b>) under the title.</p>
 
 <p align="center">Unless you change the name of the repo you forked from <code>template</code> to something else, your page will be published at <i>your_GitHub_handle.github.io/template</i>.</p> 
 
@@ -50,6 +43,8 @@
 * Edit [`report.md`](report.md) file to create your own report. The template markdown will walk you through how to cite references, add figures and equations etc.
 
 * Edit [`report.bib`](report.bib) to add your bibliography in [BibTeX](http://www.bibtex.org/) format.
+
+* To adjust the size and the appearence of your figures on the corresponging web-page, please edit <code>figures/figures.css</code> file. You can fin the instructions in the file. 
 
 
 | ⚠️ Warning|
