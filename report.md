@@ -66,7 +66,7 @@ reviewers:
   - name: Agah
     surname: Karakuzu
     gh_handle: agahkarakuzu
-    
+
 ---
 
 # Introduction
@@ -106,7 +106,7 @@ You can add mathematical formulas. Single dollars ($) are required for inline ma
 \begin{equation}\label{eq:fourier}
 \hat f(\omega) = \int_{-\infty}^{\infty} f(x) e^{i\omega x} dx
 \end{equation}
-and refer to \autoref{eq:fourier} from text.
+and refer to \eqref{eq:fourier} from text.
 
 
 # Results
