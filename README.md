@@ -1,5 +1,3 @@
-<h2 align="center"> STEP 1 - Quick start ⚙️ </h2>
-
 <h3 align="center"> Use this template </h3>
 <h3 align="center"> 🍪✂️ </h3>
 
@@ -32,9 +30,8 @@
 
 <p align="center">Soon after a successful action run, your web page will be deployed. You should see <b>Environments</b> section appeared in your repository (on the right column). In the <b>Environments</b> page, click the <code>View Deployment</code> button to visit your report page!
 
-## STEP 2 - Edit your report ✍️
+## Edit your report ✍️
   
-
 * Place your figures in the [`figures`](figures) folder. 
 
 * Edit [`report.md`](report.md) file to create your own report. The template markdown will walk you through how to cite references, add figures and equations etc.
