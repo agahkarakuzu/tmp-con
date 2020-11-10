@@ -1,4 +1,4 @@
-name: Build report
+name: Report
 on:
   push:
     branches:
