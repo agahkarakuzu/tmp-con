@@ -103,14 +103,13 @@ You can add mathematical formulas. Single dollars ($) are required for inline ma
 
 \noindent You can also use plain \LaTeX for equations:
 
-$$
-\begin{align}
+
+\begin{equation}
 \label{eq:fourier}
 \hat f(\omega) = \int_{-\infty}^{\infty} f(x) e^{i\omega x} dx
-\end{align}
-$$
+\end{equation}
 
-and refer to $\eqref{eq:fourier}$ from text.
+and refer to \eqref{fourier} from text.
 
 
 # Results
