@@ -1,4 +1,4 @@
-name: Build proceeding PDF
+name: Build report
 on:
   push:
     branches:
