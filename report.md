@@ -44,7 +44,7 @@ affiliations:
   state: Quebec
   country: Canada
 
-summary: Powered by GitHub Actions, Pandoc and Hugo, this simple repository can turn itself into a full-blown article page where you can download the PDF! Zero installation. We hope that this little project encourages all the great hackathon participants to create nifty reports worthy of their projects. If you have any suggestions or improvements, please feel free to open an issue or make a pull request at the \href{https://github.com/brainhack-proceedings/template}{template} repository.    
+summary: Powered by GitHub Actions, Pandoc and Hugo, this simple repository can turn itself into a full-blown article page where you can download the PDF! Zero installation. We hope that this little project encourages all the great hackathon participants to create nifty reports worthy of their projects. If you have any suggestions or improvements, please feel free to open an issue or make a pull request at the brainhack-proceegins/template repository.
 
 coi: Please add if there are competing interests. Otherwise, type None.
 
@@ -103,12 +103,11 @@ Subsection content goes here. You can create numerated lists:
   \item The numbers starts at 1 with every call to the enumerate environment.
 \end{enumerate}
 
-### SubSubsection
+### Equations & formulas
 You can add mathematical formulas. Single dollars ($) are required for inline mathematics e.g. $f(x) = e^{\pi/x}$.
 \smallskip
 
-\noindent You can also use plain \LaTeX for equations:
-
+\noindent You can also use plain LaTeX for equations. These equations are rendered by MathJax, you can right click on them and explore the rendering options available at your browser!
 
 \begin{equation} \label{eq:1}
 \hat f(\omega) = \int_{-\infty}^{\infty} f(x) e^{i\omega x} dx
@@ -116,6 +115,8 @@ You can add mathematical formulas. Single dollars ($) are required for inline ma
 
 and refer to \ref{eq:1} from text.
 
+### Hypothes.is 
+We enabled \href{https://web.hypothes.is/}{hypothes.is} for the brainhack proceeding reports. This way, you can annotate, highlight and tag the content collaboratively! You may choose to share your insights with everyone, or keep them private.      
 
 # Results
 Figure files must be placed at the \code{figures} folder. You can include figures using the following block:
