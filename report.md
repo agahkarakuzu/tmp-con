@@ -66,9 +66,7 @@ reviewers:
   - name: Agah
     surname: Karakuzu
     gh_handle: agahkarakuzu
-  - name: Theodore
-    surname: Karakuzu
-    gh_handle: theothecat
+    
 ---
 
 # Introduction
