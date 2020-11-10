@@ -3,9 +3,12 @@ event: 'OHBM Brainhack 2020'
 
 title:  'An automagical report generator for BrainHack Proceedings'
 
+# Please set this url to the GitHub repository that contains your project.
+url: https://github.com/username/project_repository
+
 # ========================================================================
 # Automatically edited by GitHub actions, please do not modify -- START --
-url: https://github.com/agahkarakuzu/tmp-con
+report_url: https://github.com/agahkarakuzu/tmp-con
 
 last_changed: 2020-11-10 01:15 UTC
 
@@ -69,6 +72,10 @@ reviewers:
   - name: Agah
     surname: Karakuzu
     gh_handle: agahkarakuzu
+
+# If your project repository is binderhub friendly, set the following to true to make a badge appear 
+# on your website. 
+binderhub: false 
 
 # Please do not change the following line. 
 bibliography: report

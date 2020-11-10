@@ -16,7 +16,7 @@ jobs:
         run: echo "DATE=$(date +'%Y-%m-%d %H:%M')" >> $GITHUB_ENV
       - name: Update MD front-matter
         run: |
-         sed -i "/^url:.*/c\url: https://github.com/$GITHUB_REPOSITORY" report.md
+         sed -i "/^report_url:.*/c\report_url: https://github.com/$GITHUB_REPOSITORY" report.md
          sed -i "/^last_changed:.*/c\last_changed: $DATE UTC" report.md
          sed -i "/^auth_created:.*/c\auth_created: ${{ github.actor }}" report.md
          git config --local user.email "noreply@bhproceedings.com"
