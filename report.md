@@ -1,7 +1,7 @@
 ---
 event: 'OHBM Brainhack 2020'
 
-title:  'No way this worked 5'
+title:  'An automagical report generator for BrainHack Proceedings'
 
 # Automatically edited by GitHub actions, please do not modify -- START --
 url: https://github.com/agahkarakuzu/tmp-con
@@ -104,8 +104,7 @@ You can add mathematical formulas. Single dollars ($) are required for inline ma
 \noindent You can also use plain \LaTeX for equations:
 
 
-\begin{equation}
-\label{eq:1}
+\begin{equation} \label{eq:1}
 \hat f(\omega) = \int_{-\infty}^{\infty} f(x) e^{i\omega x} dx
 \end{equation}
 
