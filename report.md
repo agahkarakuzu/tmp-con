@@ -1,36 +1,31 @@
 ---
-event: 'OHBM Brainhack 2020'
-
-title:  'An automagical report generator for BrainHack Proceedings'
-
-# Please set this url to the GitHub repository that contains your project.
-url: https://github.com/username/project_repository
+# Please do not delete --- above :) 
 
 # ========================================================================
-# Automatically edited by GitHub actions, please do not modify -- START --
+# Automatically edited by GitHub actions, please do not modify     | START 
+# ==============================================================
 report_url: https://github.com/agahkarakuzu/tmp-con
 
 last_changed: 2020-11-10 01:15 UTC
 
 auth_created: agahkarakuzu
-# Automatically edited by GitHub actions, please do not modify -- END -- 
-# ========================================================================
-author:
-- initials: JD
-  surname: Doe
-  firstname: Jane
-  email: janedoe@gmail.com
-  affiliation: aff1, aff2
-  corref: aff1
-  # Please make sure that you set corref (corresponding aff) if you have
-  # multiple afiliations
-- initials: JJD
-  surname: Doe
-  firstname: John J.
-  email: johndoe@gmail.com
-  affiliation: aff2
-  url: https://jonhdoe.website.com
+# ===============================================================  | END 
 
+# Name of the event. 
+# -----------------
+event: 'OHBM Brainhack 2020'
+
+# The title of your report. 
+# -------------------------
+title:  'An automagical report generator for BrainHack Proceedings'
+
+# Please SET this url to your GitHub project repo!
+# ------------------------------------------------- 
+url: https://github.com/username/project_repository 
+
+# Please edit affiliation details. The affiliation 
+# ids defined here will be used in the author list.
+# ------------------------------------------------- 
 affiliations:
 - id: aff1
   orgname: 'Research Lab 1, Organization 1'
@@ -47,14 +42,32 @@ affiliations:
   state: Quebec
   country: Canada
 
+# Please list the authors.
+# If an author has multiple affiliations, please
+# add corref field and indicate the primary affiliation.
+# -----------------------------------------------------
+author:
+- initials: JD
+  surname: Doe
+  firstname: Jane
+  email: janedoe@gmail.com
+  affiliation: aff1, aff2
+  corref: aff1
+  # Please make sure that you set corref (corresponding aff) if you have
+  # multiple afiliations
+- initials: JJD
+  surname: Doe
+  firstname: John J.
+  email: johndoe@gmail.com
+  affiliation: aff2
+  url: https://jonhdoe.website.com
+
+# Please write a brief summary of your project.
+# This abstract will (only) appear on the webpage.
+# -------------------------------------------------
 summary: Powered by GitHub Actions, Pandoc and Hugo, this simple repository can turn itself into a full-blown article page where you can download the PDF! Zero installation. We hope that this little project encourages all the great hackathon participants to create nifty reports worthy of their projects. If you have any suggestions or improvements, please feel free to open an issue or make a pull request at the brainhack-proceegins/template repository.
 
-coi: Please add if there are competing interests. Otherwise, type None.
-
-acknow: The authors would like to thank the organizers and attendees of OHBM Brainhack 2020.
-
-contrib: JD and JJD wrote the software, JD performed tests, and JD and JJD wrote the report.
-
+# Please add 1 to 3 tags
 tags:
   - tag1
   - tag2
@@ -67,23 +80,28 @@ supplemental:
   - name: Material 2 
     url: https://zenodo.org 
 
+coi: Please add if there are competing interests. Otherwise, type None.
+
+acknow: The authors would like to thank the organizers and attendees of OHBM Brainhack 2020.
+
+contrib: JD and JJD wrote the software, JD performed tests, and JD and JJD wrote the report.
+
 # Please comment out the following 4 lines if no reviewer has been assigned to you yet.
 reviewers:
   - name: Agah
     surname: Karakuzu
     gh_handle: agahkarakuzu
 
-# If your project repository is binderhub friendly, set the following to true to make a badge appear 
-# on your website. 
+# Show/hide the BinderHub (mybinder.org) badge
+# Accepted values: true/false (case sensitive)
+# -------------------------------------------
 binder: true
 
-# Please do not change the following line. 
-bibliography: report
-
+# Please do not delete --- below :) 
 ---
 
 # Introduction
-The bibliography (\code{report.bib}) must respect \href{http://www.bibtex.org/Using/}{BibTeX} format. 
+The bibliography \code{report.bib} must respect \href{http://www.bibtex.org/Using/}{BibTeX} format. 
 You can cite entries in your bibliography using their tags:
 
 \begin{itemize}
