@@ -109,7 +109,7 @@ You can add mathematical formulas. Single dollars ($) are required for inline ma
 \hat f(\omega) = \int_{-\infty}^{\infty} f(x) e^{i\omega x} dx
 \end{equation}
 
-and refer to \eqref{eq:1} from text.
+and refer to \ref{eq:1} from text.
 
 
 # Results
