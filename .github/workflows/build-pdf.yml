@@ -65,7 +65,7 @@ jobs:
         bibtex brainhack-${{env.PUB_NAME}}
         pdflatex brainhack-${{env.PUB_NAME}}.tex
         pdflatex brainhack-${{env.PUB_NAME}}.tex
-        pandoc brainhack-${{env.PUB_NAME}}-html.tex -c ./css/figures.css -f latex -t html -s -o report.html --bibliography ../report.bib --mathjax -H ./mathjax-header-include.txt
+        pandoc brainhack-${{env.PUB_NAME}}-html.tex -c ./css/figures.css -f latex -t html -s -o report.html --bibliography ../report.bib --mathjax=https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js -H ./mathjax-header-include.txt
         cp report.html ../layouts/partials/report.html
         mkdir -p ../static/pdf
         cp brainhack-${{env.PUB_NAME}}.pdf ../static/pdf/brainhack-${{env.PUB_NAME}}.pdf

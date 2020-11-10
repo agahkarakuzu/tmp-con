@@ -105,11 +105,11 @@ You can add mathematical formulas. Single dollars ($) are required for inline ma
 
 
 \begin{equation}
-\label{eq:fourier}
+\label{eq:1}
 \hat f(\omega) = \int_{-\infty}^{\infty} f(x) e^{i\omega x} dx
 \end{equation}
 
-and refer to \eqref{eq:fourier} from text.
+and refer to \eqref{eq:1} from text.
 
 
 # Results
