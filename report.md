@@ -3,6 +3,7 @@ event: 'OHBM Brainhack 2020'
 
 title:  'An automagical report generator for BrainHack Proceedings'
 
+# ========================================================================
 # Automatically edited by GitHub actions, please do not modify -- START --
 url: https://github.com/agahkarakuzu/tmp-con
 
@@ -10,7 +11,7 @@ last_changed: 2020-11-10 01:15 UTC
 
 auth_created: agahkarakuzu
 # Automatically edited by GitHub actions, please do not modify -- END -- 
-
+# ========================================================================
 author:
 - initials: JD
   surname: Doe
@@ -43,7 +44,7 @@ affiliations:
   state: Quebec
   country: Canada
 
-summary: Please write a brief summary of your project. This section will appear on the webpage. 
+summary: Powered by GitHub Actions, Pandoc and Hugo, this simple repository can turn itself into a full-blown article page where you can download the PDF! Zero installation. We hope that this little project encourages all the great hackathon participants to create nifty reports worthy of their projects. If you have any suggestions or improvements, please feel free to open an issue or make a pull request at the \href{https://github.com/brainhack-proceedings/template}{template} repository.    
 
 coi: Please add if there are competing interests. Otherwise, type None.
 
@@ -56,16 +57,21 @@ tags:
   - tag2
   - tag3
 
+# Please comment out the following 5 lines if you have no supplemental material.
 supplemental:
-  - Material 1
-  - Material 2 
+  - name: Material 1
+    url: https://osf.io 
+  - name: Material 2 
+    url: https://zenodo.org 
 
-bibliography: report
-
+# Please comment out the following 4 lines if no reviewer has been assigned to you yet.
 reviewers:
   - name: Agah
     surname: Karakuzu
     gh_handle: agahkarakuzu
+
+# Please do not change the following line. 
+bibliography: report
 
 ---
 
