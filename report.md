@@ -75,7 +75,7 @@ reviewers:
 
 # If your project repository is binderhub friendly, set the following to true to make a badge appear 
 # on your website. 
-binderhub: false 
+binder: true
 
 # Please do not change the following line. 
 bibliography: report
